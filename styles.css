@@ -1,0 +1,44 @@
+.container {
+  display: grid;
+  grid-template-areas:
+    "nav"
+    "main"
+    "side"
+    "foot";
+  grid-gap: 5px;
+  border: 2px solid red;
+}
+
+.section {
+  border: 2px solid goldenrod;
+  margin: 5px;
+}
+
+.navbar {
+  grid-area: nav;
+}
+
+.main {
+  display: grid;
+  justify-content: center;
+  grid-gap: 10px;
+  border: 1px solid green;
+  grid-area: main;
+}
+
+.sidebar {
+  grid-area: side;
+}
+
+.footer {
+  grid-area: foot;
+}
+
+.cards {
+  background-color: lightblue;
+}
+
+img {
+  width: 300px;
+  height: auto;
+}
