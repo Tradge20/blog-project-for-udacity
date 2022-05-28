@@ -1,0 +1,60 @@
+.container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas:
+    "head"
+    "author"
+    "post"
+    "social"
+    "foot";
+  border: 2px solid yellow;
+  padding: 5px;
+}
+
+.header {
+  border: 1px solid black;
+  grid-area: head;
+}
+
+.author-card {
+  border: 1px solid green;
+  grid-area: author;
+}
+
+.blog-content {
+  display: grid;
+  grid-gap: 5px;
+  justify-content: space-around;
+  justify-items: center;
+  align-items: center;
+  border: 1px solid red;
+  grid-area: post;
+}
+
+.post-image {
+  width: 90%;
+  height: auto;
+}
+
+.social-card {
+  display: flex;
+  justify-content: space-around;
+  justify-self: center;
+  width: 80%;
+  padding: 5px;
+  border: 1px solid black;
+  grid-area: social;
+}
+
+.thumbnail {
+  width: 40px;
+  height: auto;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid green;
+  padding: 5px;
+  grid-area: foot;
+}
