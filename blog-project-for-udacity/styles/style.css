@@ -1,0 +1,84 @@
+@import "blog_cards.css";
+@import "card.css";
+@import "sidebar.css";
+
+.container {
+  display: grid;
+  /* grid-template-columns: 3fr 2fr; */
+  grid-template-areas:
+    "nav"
+    "article"
+    "side"
+    "foot";
+  column-gap: 30px;
+}
+
+nav {
+  grid-column: span 3;
+  padding: 30px;
+  border-bottom: 1px solid rgb(107, 8, 8);
+  display: flex;
+  justify-content: space-around;
+  grid-area: nav;
+}
+
+nav ul {
+  font-size: 2.5em;
+  list-style-type: none;
+}
+
+nav h1 {
+  font-size: 4em;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 10px;
+  grid-area: article;
+}
+
+article h2 {
+  font-size: 2.5em;
+}
+
+article img {
+  width: 100%;
+}
+
+article p {
+  margin-top: 30px;
+  font-size: 1.5em;
+  color: rgb(52, 105, 173);
+}
+
+#continue {
+  max-width: 250px;
+  padding: 15px;
+  align-self: center;
+  background-color: rgb(40, 216, 55);
+  color: #fff;
+  font-size: 1em;
+}
+
+footer {
+  grid-column: span 3;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  padding: 30px;
+  grid-area: foot;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    grid-template-areas:
+      "nav nav nav nav nav"
+      "article article article side side"
+      "foot foot foot foot foot";
+  }
+}

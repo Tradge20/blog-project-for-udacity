@@ -1,0 +1,104 @@
+.container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas:
+    "head"
+    "author"
+    "post"
+    "social"
+    "foot";
+  border: 2px solid yellow;
+  padding: 5px;
+}
+
+#caught {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.loud {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.quote {
+  font-style: italic;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  border: 1px solid black;
+  grid-area: head;
+  text-align: center;
+}
+
+nav h1 {
+  font-size: 2em;
+}
+
+.author-card {
+  padding: 15px;
+  border: 1px solid green;
+  grid-area: author;
+  font: 1.5em sans-serif;
+}
+
+#avatar {
+  width: 150px;
+  height: auto;
+}
+
+.blog-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 20px;
+  align-items: center;
+  border: 1px solid red;
+  grid-area: post;
+  font-size: 1.1em;
+}
+
+.post-image {
+  width: 90%;
+  height: auto;
+}
+
+.social-card {
+  display: flex;
+  justify-content: space-around;
+  justify-self: center;
+  width: 80%;
+  padding: 5px;
+  border: 1px solid black;
+  grid-area: social;
+}
+
+.thumbnail {
+  width: 40px;
+  height: auto;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid green;
+  padding: 5px;
+  grid-area: foot;
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    grid-template-areas:
+      "head head head head"
+      "author post post post"
+      "social social social social"
+      "foot foot foot foot";
+  }
+
+  .author-card {
+    align-self: start;
+  }
+}

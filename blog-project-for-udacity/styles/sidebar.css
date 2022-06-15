@@ -1,0 +1,10 @@
+.sidebar {
+  margin: 5px;
+  grid-area: side;
+  /* background: #45e45e; */
+}
+
+/* .sidebar .blog-cards {
+  display: flex;
+  justify-content: center;
+} */
