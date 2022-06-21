@@ -21,10 +21,6 @@
   font-size: 1.2em;
 }
 
-.quote {
-  font-style: italic;
-}
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -64,6 +60,11 @@ nav h1 {
 .post-image {
   width: 90%;
   height: auto;
+  grid-area: img;
+}
+
+#content-text {
+  grid-area: txt;
 }
 
 .social-card {
@@ -88,6 +89,15 @@ nav h1 {
   padding: 5px;
   grid-area: foot;
 }
+
+@media screen and (min-width: 760px) {
+  .container {
+    grid-template-areas:
+      "head head head head"
+      "author author post post"
+      "social social social social"
+      "foot foot foot foot";
+  }
 
 @media screen and (min-width: 900px) {
   .container {

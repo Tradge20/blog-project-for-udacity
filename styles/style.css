@@ -74,7 +74,16 @@ footer ul {
   list-style-type: none;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 760px) {
+  .container {
+    grid-template-areas:
+      "nav nav nav nav nav"
+      "article article side side side"
+      "foot foot foot foot foot";
+  }
+}
+
+@media screen and (min-width: 970px) {
   .container {
     grid-template-areas:
       "nav nav nav nav nav"

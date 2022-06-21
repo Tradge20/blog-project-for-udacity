@@ -5,20 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Blogs</title>
-    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
     <div class="container">
       <nav>
         <h1>My Blog Post Page!</h1>
         <ul>
-          <li><a href="blog.html#blog1">Featured Post</a></li>
+          <li><a href="pages/blog.html#blog1">Featured Post</a></li>
           <li><a href="#more">More Post</a></li>
         </ul>
       </nav>
 
       <article class="main section">
-        <h2><a href="blog.html#blog1">First Blog Post</a></h2>
+        <h2><a href="pages/blog.html#blog1">First Blog Post</a></h2>
         <div class="description">
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae
@@ -26,7 +26,11 @@
             Ullam, aliquid similique!
           </p>
         </div>
-        <img src="../images/concert-blog.jpg" alt="music concert crowd" />
+
+        <figure>
+          <img src="images/concert-blog.jpg" alt="music concert crowd" />
+          <figcaption>A concert</figcaption>
+        </figure>
         <div class="context">
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo
@@ -37,7 +41,7 @@
           </p>
         </div>
         <button id="continue">
-          <a href="blog.html#blog1">Continue Reading</a>
+          <a href="pages/blog.html#blog1">Continue Reading</a>
         </button>
       </article>
 
@@ -45,19 +49,23 @@
         <h2 id="more">More Post</h2>
         <div class="blog-cards">
           <div class="card">
-            <h2><a href="blog2.html#blog2">Another Blog Post</a></h2>
+            <h2><a href="pages/blog2.html#blog2">Another Blog Post</a></h2>
             <div class="description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
               voluptates placeat ratione veniam, sunt eius sed ullam porro
               quaerat dolore magnam ut a modi repellat tenetur non deleniti
               dolorum omnis!
             </div>
+
             <div class="card-img">
-              <img src="../images/manga-blog.jpg" alt="manga comic book" />
+              <figure>
+                <img src="images/manga-blog.jpg" alt="manga comic book" />
+                <figcaption>Manga comic</figcaption>
+              </figure>
             </div>
           </div>
           <div class="card">
-            <h2><a href="blog3.html#blog3">And Yet Another</a></h2>
+            <h2><a href="pages/blog3.html#blog3">And Yet Another</a></h2>
             <div class="description">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta
               nam impedit non magnam aperiam accusamus iste sint optio vel
@@ -66,7 +74,10 @@
             </div>
 
             <div class="card-img">
-              <img src="../images/lasagna-blog.jpg" alt="lasagna" />
+              <figure>
+                <img src="images/lasagna-blog.jpg" alt="lasagna" />
+                <figcaption>Lasagna</figcaption>
+              </figure>
             </div>
           </div>
         </div>
